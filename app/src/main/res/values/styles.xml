@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="AppTheme" parent="Base.AppTheme" />
+
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/darkPrimaryColor</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorAccent">@color/celeste</item>
+
+        <item name="android:windowBackground">@color/violet</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
