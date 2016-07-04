@@ -21,31 +21,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class ejercicio4 extends AppCompatActivity{
-    HashMap<Integer, Integer> mapNumeros=new HashMap<Integer, Integer>();
-    HashMap<Integer, Integer> selec=new HashMap<Integer, Integer>();
-    ArrayList<Integer>elegidos=new ArrayList<>();
-    ArrayList<Integer>clavesElegidos=new ArrayList<>();
-    Integer max = 20;
-    Random random;
-    ImageView img1;
-    ImageView img2;
-    ImageView img3;
-    ImageView img4;
-    ImageView img5;
-    ImageView img6;
+public class ejercicio4 extends MainActivity{
 
-    MediaPlayer bien;
-    MediaPlayer error;
-
-    private static String IMG_TAG1 = "IMAGE_TAG1";
-    private static String IMG_TAG2 = "IMAGE_TAG2";
-    private static String IMG_TAG3 = "IMAGE_TAG3";
-    private static String IMG_TAG4 = "IMAGE_TAG4";
-    private static String IMG_TAG5 = "IMAGE_TAG5";
-    private static String IMG_TAG6 = "IMAGE_TAG6";
-
-    int layout = 1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -104,7 +81,7 @@ public class ejercicio4 extends AppCompatActivity{
             ClipData data = ClipData.newPlainText("simple_text", "text");
             View.DragShadowBuilder sb = new View.DragShadowBuilder(v);
             v.startDrag(data, sb, v, 0);
-            v.setVisibility(View.VISIBLE);
+//            v.setVisibility(View.VISIBLE);
             return true;
         }
     }
@@ -268,42 +245,7 @@ public class ejercicio4 extends AppCompatActivity{
         }
     }
 
-    public void llenarMap(){
-        mapNumeros.put(1, R.drawable.ic_numero1);
-        mapNumeros.put(2, R.drawable.ic_numero2);
-        mapNumeros.put(3, R.drawable.ic_numero3);
-        mapNumeros.put(4, R.drawable.ic_numero4);
-        mapNumeros.put(5, R.drawable.ic_numero5);
-        mapNumeros.put(6, R.drawable.ic_numero6);
-        mapNumeros.put(7, R.drawable.ic_numero7);
-        mapNumeros.put(8, R.drawable.ic_numero8);
-        mapNumeros.put(9, R.drawable.ic_numero9);
-        mapNumeros.put(10, R.drawable.ic_numero10);
-    }
-
-    public void elegirNumeros(){
-        random = new Random();
-        int i = 1;
-        while(i<7){
-           int n = random.nextInt(10)+1; //Numero aleatorio entre 1 y 10
-            if(!elegidos.contains(mapNumeros.get(n))){
-                elegidos.add(mapNumeros.get(n));
-                clavesElegidos.add(n);
-                selec.put(i, n);
-                i+=1;
-            }
-        }
-    }
-
-    public boolean esElMenor(int numero){
-        boolean menor = true;
-        for(int n: clavesElegidos){
-            if(n<numero){
-                menor = false;
-            }
-        }
-        return menor;
-    }
+//
 
 }
 

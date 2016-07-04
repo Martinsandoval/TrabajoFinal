@@ -85,7 +85,7 @@ public class MenuActivity extends AppCompatActivity
         android.app.FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.ordenar) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new MainActivity()).commit();
+//            fragmentManager.beginTransaction().replace(R.id.content_frame, new MainActivity()).commit();
 
         } else if (id == R.id.config) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new Configuracion()).commit();

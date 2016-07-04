@@ -122,9 +122,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Ordenar de menor a mayor"
-        android:id="@+id/textView"
+        android:id="@+id/textView4"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/black"
-        android:textSize="22sp"/>
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
